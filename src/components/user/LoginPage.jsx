@@ -36,7 +36,16 @@ const LoginPage = () => {
         navigate(from, { replace: true })
       })
       .catch(err => {
-        setError(err.message)
+        console.error("Login error:", err);
+        if (err.response) {
+          if (err.response.status === 401) {
+            setError("Invalid username or password");
+          } else {
+            setError(`Login failed: ${err.response.data.detail || err.message}`);
+          }
+        } else {
+          setError(`Network error: ${err.message}`);
+        }
         setLoading(false)
       })
   }

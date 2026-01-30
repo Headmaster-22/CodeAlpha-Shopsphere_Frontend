@@ -35,11 +35,21 @@ const SignUpPage = () => {
         navigate("/login");
       }
     } catch (err) {
-      if (err.response && err.response.status === 400) {
-        toast.error("Username already exists");
-        return;
+      console.error("Registration error:", err);
+      if (err.response) {
+        if (err.response.status === 400) {
+          const errorData = err.response.data;
+          if (errorData.username) {
+            toast.error(`Username error: ${errorData.username[0]}`);
+          } else {
+            toast.error("Username already exists or invalid data");
+          }
+        } else {
+          toast.error(`Registration failed: ${err.response.data.detail || err.message}`);
+        }
+      } else {
+        toast.error(`Network error: ${err.message}`);
       }
-      toast.error(err.message);
     }
   }
 

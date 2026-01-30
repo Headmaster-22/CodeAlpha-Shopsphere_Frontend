@@ -25,6 +25,7 @@ const UserProfilePage = () => {
     };
 
     fetchUserData();
+    
   }, []);
 
   if (loading) return <Spinner loading={loading} />;

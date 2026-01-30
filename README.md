@@ -12,6 +12,18 @@ Welcome to **Shopsphere Frontend**, a sleek and minimalistic user interface buil
 - **Payment Integration**: Secure payments via PayPal and Flutterwave.
 
 ---
+## 🚀 **Images**
+![Registration Page](<screenshots/Screenshot 2026-01-30 181333.png>)
+![Login Page](<screenshots/Screenshot 2026-01-30 181356.png>)
+![Home Page](<screenshots/Screenshot 2026-01-30 181412.png>)
+![Home Page #2](<screenshots/Screenshot 2026-01-30 181427.png>)
+![Product Page](<screenshots/Screenshot 2026-01-30 181450.png>)
+![Product Page #2g](<screenshots/Screenshot 2026-01-30 181506.png>)
+![Checkout Page](<screenshots/Screenshot 2026-01-30 181522.png>)
+![Payment Proccessing Page](<screenshots/Screenshot 2026-01-30 181536.png>)
+![PayPal Integration](<screenshots/Screenshot 2026-01-30 181556.png>)
+![About Page](<screenshots/Screenshot 2026-01-30 183500.png>)
+![Profile Page](<screenshots/Screenshot 2026-01-30 183514.png>)
 
 ## 📦 **Installation and Setup**
 
